@@ -1,0 +1,16 @@
+
+## WRITE:
+WRITE (<integer> | <character>) // syntax
+writes the argument to the tape
+
+## MVUP:
+moves the tape forward one position
+
+## MVDN:
+moves the tape back one position
+
+## PRNTCHR:
+prints the value stored in the tape at the current position interpreted as a character
+
+## PRNTINT:
+prints the value stored in the tape at the current position interpreted as an integer
