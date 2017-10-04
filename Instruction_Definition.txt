@@ -1,16 +1,42 @@
 
 ## WRITE:
-WRITE (<integer> | <character>) // syntax
+WRITE (<integer> | <character> | REGISTER) // syntax
 writes the argument to the tape
 
 ## MVUP:
 moves the tape forward one position
 
+## MVUX <integer>:
+moves the tape forward <integer> position
+
 ## MVDN:
 moves the tape back one position
 
-## PRNTCHR:
+## MVDX <integer>:
+moves the tape back <integer> position
+
+## PRINTCHR:
 prints the value stored in the tape at the current position interpreted as a character
 
-## PRNTINT:
+## PRINTINT:
 prints the value stored in the tape at the current position interpreted as an integer
+
+## SET REGISTER (PEEK | REGISTER | <integer>)
+
+## ADD (PEEK | REGISTER) (PEEK | REGISTER | <integer>)
+
+## SUB (PEEK | REGISTER) (PEEK | REGISTER | <integer>)
+
+## DIV (PEEK | REGISTER) (PEEK | REGISTER | <integer>)
+
+## MUL (PEEK | REGISTER) (PEEK | REGISTER | <integer>)
+
+## MOD (PEEK | REGISTER) (PEEK | REGISTER | <integer>)
+
+## LOOP (<integer> | PEEK ) { ... }
+performs the contents of the brackets (brackets must be isolated, separated from other lexemes 
+with whitespace) 
+
+## WHILE (<conditional>) { .. }
+
+## COND ( PEEK  ( = | > | < | <= | >= | != ) <integer>) { ... } ELSE { ... }
